@@ -1,0 +1,401 @@
+body {
+    background: rgb(7, 7, 7);
+    background: linear-gradient(300deg, rgb(89, 0, 255) 10%, rgba(109, 185, 236, 0.95) 45%, rgb(0, 0, 0) 100%);
+    background-size: 150% 150%;
+    margin: 0;
+    bottom: 0%;
+    padding: 100px 0 0 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins , sans-serif ; 
+}
+
+.background-image {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.background-image2 {
+    position: fixed;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.header {
+    margin-bottom: 80px;
+}
+
+#country {
+    margin: 15px;
+}
+
+.astrics {
+    color: rgb(175, 0, 0);
+}
+.container {
+    width: 50%;
+    margin: 0px auto;
+    background-color: rgba(1, 16, 78, 0);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+}
+
+.notice {
+    margin: 0 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #0088ff7e;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.568);
+    color: #000000;
+}
+
+#note1 {
+    font-size: 30px;
+}
+
+#note2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.section {
+    position: static;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ffffff00;
+    border-radius: 5px;
+    background-color: #ffffff00;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.section input{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.section label {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.order-summary {
+    position: static;
+    text-align: center;
+    background-color: #e9ecef3a;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px rgb(0, 162, 255);
+}
+
+.order-summary h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.order-summary .total {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #061ace;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.fish {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.fish-gif {
+    height: 300px;
+}
+
+  .error {
+    color: red;
+    font-size: 0.9em;
+}
+.input-error {
+    border-color: red;
+}
+
+
+/* Student 2 Navbar header and footer*/
+.navbar-footer {
+    display: flex;
+    justify-content: flex-start;
+    position: static;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; /*easier handling with paddings*/
+}
+
+.logo_img{      /*logo with both an image and text*/
+    float:left;
+    margin:0%;
+    padding:0px;
+    height: 100px;;
+    width: 100px;
+   
+}
+
+.logo{
+    color:rgb(1,20,99);
+    font-size: 24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-weight: bold;
+    
+}
+
+.logo b{
+    color:rgb(1, 7, 41);
+    font-size: 24px;
+    font-family:unset;
+    font-weight:800;
+}
+
+.navbar ul{                  /*navigation bar with unordered list items*/
+    list-style-type:none ;
+    background-color:rgba(73,135,253,0.95);
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    justify-content:left;
+    position:fixed;
+    width: 100%;
+    top:0; 
+    z-index: 4;   /*higher the z-index to stop overlapping transtions*/
+}
+
+.navbar ul li{
+    margin-left: 62px;
+    margin-right: 50px;
+}
+
+.navbar ul li a{
+    top: 50%;
+    text-decoration: none;
+    font-size:  15px; 
+    color: rgb(1,20,99);
+    font-weight: bold;
+    transition:0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+
+}
+
+.navbar ul li ::after{      /*adding a border effect to the items*/
+    content: "";
+    background:rgb(1,20,99);
+    border-radius: 30px;
+    width: 120px;
+    height:200%;
+    position: absolute;
+    top:120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.4s;
+}
+
+.navbar ul li a:hover{
+    color: rgb(159, 220, 255);  
+}
+
+.navbar ul li a:hover::after{   /*the transition part*/
+    top:50%;
+    opacity: 1;
+}
+
+.footer-container{
+    bottom: 0;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    bottom: 0%;
+    background-color:rgb(1, 7, 41);
+    padding: 30px 0; 
+    width: 100%;
+}
+
+.footer-col{
+    width:25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    margin-left: 90px;
+    font-size: 18px;
+    color:rgb(43,103,255);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{    
+    content:'';
+    position: static;
+    bottom:-10px;
+    background-color: rgb(94, 3, 18);
+    height: 2px;
+    box-sizing: border-box;
+    width:40px;
+}
+
+.footer-col ul li:not(:last-child){  
+	margin-bottom: 10px;        /* adding line space among the footer elements but not the last element*/
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color:rgb(159, 220, 255);
+	display:block;
+	transition:all 0.4s ease;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.footer-col ul li a:hover{       /*adding a transition to footer links*/
+	color: rgb(159, 220, 255);
+	padding-left: 8px;
+    font-weight: bold;
+    
+}
+
+.footer-col ul li{
+    font-weight: 300;
+    color:rgb(159, 220, 255);
+    text-align: left;
+    margin-left: 40px;
+}
+.footer-col ul li span a{   /*changing some properties of the link below the non-links*/
+    text-align: left;
+    margin-left: 0px;
+}
+
+#feedback-btn{         /*adding the feedback button*/
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor:pointer;
+    padding: 10px;
+    background-color: rgb(159, 220, 255);
+    color: rgb(1,7,41);
+    transition: all 0.4s;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+#feedback-btn:hover{
+    background-color: rgb(1,20,99);     /*add transitions*/
+    color: rgb(159, 220, 255);
+}
+
+.footer-col .social-links a{ /*the social media icons*/
+	display: inline-block ;
+    height: 40px;
+	width: 40px;
+	background-color: rgba(159,220,255,0.7);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: rgb(1, 7, 41);
+	transition: all 0.4s ease;
+}
+
+.footer-col .social-links a:hover{   /*add transition*/
+	color: rgb(159,220,255);
+	background-color:rgb(1,20,99);
+}
+
+
+/*changing the sites for the smaller screens or smaller windows*/
+@media (max-width: 1300px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .navbar a {
+        display: none; /*removing navbar and making the user use footer to access to the other pages*/
+    }
+}   
+
+@media only screen and (max-width: 800px){    /*shrinking the footer*/
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+      position: sticky;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .footer-col{
+      width: 100%;
+    }
+  }

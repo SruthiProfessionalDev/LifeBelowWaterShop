@@ -1,0 +1,296 @@
+/* For the contents and layout in the main screen and it's background */
+body {
+    background: linear-gradient(45deg, rgba(2,0,36,1) 20%, rgb(114, 16, 206) 35%, rgb(25, 0, 255) 100%);
+    background-size: 150% 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: Josefin Sans, sans-serif;
+    overflow: hidden;
+    /* Added for positioning the GIF */
+    position: static; 
+    transition: FadeIn 3s ;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+}
+
+/* For Background image */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.3; 
+}
+
+.topic {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* For Logo */
+.topic img {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px; 
+}
+
+/* For the topic header */
+h1 {
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    text-shadow: 5px 5px #000000;
+}
+
+/* For mission */
+.mission {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+    text-shadow: 3px 3px #000000;
+}
+
+/* Fading in animation for loader and header */
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+/* For the header animation */
+.letter {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.letter:nth-child(1) { animation-delay: 0.1s; }
+.letter:nth-child(2) { animation-delay: 0.2s; }
+.letter:nth-child(3) { animation-delay: 0.3s; }
+.letter:nth-child(4) { animation-delay: 0.4s; }
+.letter:nth-child(5) { animation-delay: 0.5s; }
+.letter:nth-child(6) { animation-delay: 0.6s; }
+.letter:nth-child(7) { animation-delay: 0.7s; }
+.letter:nth-child(8) { animation-delay: 0.8s; }
+.letter:nth-child(9) { animation-delay: 0.9s; }
+.letter:nth-child(10) { animation-delay: 1.0s; }
+.letter:nth-child(11) { animation-delay: 1.1s; }
+.letter:nth-child(12) { animation-delay: 1.2s; }
+.letter:nth-child(13) { animation-delay: 1.3s; }
+.letter:nth-child(14) { animation-delay: 1.4s; }
+.letter:nth-child(15) { animation-delay: 1.5s; }
+.letter:nth-child(16) { animation-delay: 1.6s; }
+.letter:nth-child(17) { animation-delay: 1.7s; }
+.letter-space {
+    width: 0.7ch; /* Adjust the width as needed for spacing */
+}
+
+/* For Loader gif */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For the loader animation */
+.loading-gif {
+    opacity: 0;
+    animation: fadeIn 5s ease-in-out;
+    animation-delay: 0.5s;
+    width: 130px;
+    height: 100px;
+}
+
+/* For bubbles */
+.bubble-gif {
+    opacity: 0.6;
+    z-index: -1;
+    position: fixed;
+    width: auto;
+    height: 50%;
+}
+
+#bubble-gif1 {
+    top: 0px;
+    left: 700px;
+}
+
+#bubble-gif2 {
+    top: 100px;
+    left: 300px;
+}
+
+#bubble-gif3 {
+    top: 300px;
+    left: 1200px;
+}
+
+#bubble-gif4 {
+    top: 300px;
+    left: 500px;
+}
+
+#bubble-gif5 {
+    top: 500px;
+    left: 0px;
+}
+
+#bubble-gif6 {
+    top: 200px;
+    right: 0px;
+}
+
+#bubble-gif7 {
+    top: 650px;
+    right: 500px;
+}
+
+.bubble-animation {
+    display: flex;
+    justify-content: center;
+}
+
+/* For Footer descriptions */
+.information-footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.164);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    text-shadow: 1px 1px #000000;
+}
+
+.team {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#student1, #student2, #student3, #student4 {
+    border: 2px solid white;
+    padding: 10px;
+    width: 200px;
+    background-color: #ffffff0a;
+}
+
+.student-id {
+    top: 10px;
+}
+
+.footer-topic {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px #000000c9;
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+    .container img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .mission {
+        font-size: 25px;
+    }
+    .topic img {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px; 
+    }
+    .bubble-gif {
+        height: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    #student1,
+    #student2,
+    #student3,
+    #student4 {
+        width: 150px;
+        padding: 5px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .mission {
+        font-size: 20px;
+    }
+    .topic img {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px; 
+    }
+    .loading-gif {
+    width: 110px;
+    height: 80px;
+    }
+    .bubble-gif {
+        height: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission {
+        font-size: 16px;
+    }
+    #student1,
+    #student2,
+    #student3,
+    #student4 {
+        width: 100px;
+        padding: 5px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .topic img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px; 
+    }
+    .loading-gif {
+    width: 100px;
+    height: 70px;
+    }
+    .bubble-gif {
+        height: 10%;
+    }
+}
+
+/* For smooth Transition */
+.fade-out {
+    transition: ease-out 0.4s;
+}

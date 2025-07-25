@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!--favicon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!--icons-->
+    <link rel="stylesheet" href="Shop.css">
+    <script src="Shop.js" defer></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <ul >
+                <li><img class="logo_img" src ="..//Header&Footer/logo.png" alt="website logo" ></li>
+                <li><h2 class="logo"><b>SEA</b>theFuture</h2></li>
+                <li> <a href="..//Home/Home.html">Home</a></li>
+                <li> <a href="..//Shop/Shop.html">Shop</a></li>
+                <li> <a href="..//Gallery/gallery.html">Gallery</a></li>
+                <li> <a href="../UserProfile/profile.html">User Profile</a></li>
+                <li> <a href="../Sitemap/sitemap.html">Site Map</a> </li>
+                <li> <a href="..//Team/team.html">About Us</a></li>        
+            </ul>            
+        </nav>
+    </header>
+    
+    <!-- Background Image -->
+    <img class="background-image" src="SwimmingFishes.gif" width="350" alt="Under water">
+    
+    <!-- Main Content -->
+    <div id="scroller">
+        <div class="container">
+            <div class="product-list">
+                <!-- Product 1 -->
+                <div class="product" id="product1">
+                    <img src="./band1.png" alt="Bracelets">
+                    <div class="product-details">
+                        <h2>Bracelets</h2>
+                        <p>Use the STYLE dropdown menu below to choose your preferred color and band size to see all of the bracelet variations available: View the real images of every variation to select the ideal Together humanium metal Ocean theme bracelet!</p>
+                        <div class="product-options">
+                            <label for="size1">Size:</label>
+                            <select id="size1">
+                                <option value="S">Small</option>
+                                <option value="M">Medium</option>
+                                <option value="L">Large</option>
+                            </select>
+                            <label for="color1">Color:</label>
+                            <select id="color1">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                            </select>
+                        </div>
+                        <div class="product-price">$10.00</div>
+                        <button class="add-to-cart" data-product="Product 1" data-price="10.00">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product" id="product2">
+                    <img src="stickers1.png" alt="Stickers">
+                    <div class="product-details">
+                        <h2>Stickers</h2>
+                        <p>Enjoy World Oceans Day by showcasing the value and beauty of coral reefs with collectible stamps from the UNDP Shop. Your purchase helps raise awareness of issues affecting the world today, such as climate change and plastic pollution.</p>
+                        <div class="product-options">
+                            <label for="size3">Size:</label>
+                            <select id="size3">
+                                <option value="S">Small</option>
+                                <option value="M">Medium</option>
+                                <option value="L">Large</option>
+                            </select>
+                        </div>
+                        <div class="product-price">$15.00</div>
+                        <button class="add-to-cart" data-product="Product 2" data-price="15.00">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product" id="products3">
+                    <img src="socks1.png" alt="Socks">
+                    <div class="product-details">
+                        <h2>Socks</h2>
+                        <p>UNDP is a supporter of goods, even ethical socks, that have an impact. Made of organic cotton, this timeless, classic design supports causes close to your heart, such as the freedom to access sanitary facilities and clean water sources. Four years of access to clean water are provided by each pair.</p>
+                        <div class="product-price">$20.00</div>
+                        <button class="add-to-cart" data-product="Product 3" data-price="20.00">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product" id="product4">
+                    <img src="straw1.png" alt="Product 4">
+                    <div class="product-details">
+                        <h2>Straw</h2>
+                        <p>Disposable plastic straws are a huge issue; the US alone uses 500 million daily. Switching to reusable straws cuts waste, prevents pollution, and saves ocean life. Toast to a plastic-free future!</p>
+                        <div class="product-price">$25.00</div>
+                        <button class="add-to-cart" data-product="Product 4" data-price="25.00">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product" id="product5">
+                    <img src="watch.webp" alt="Product 5">
+                    <div class="product-details">
+                        <h2>Watch</h2>
+                        <p>Presenting the TRIWA Sea Shepherd recycled plastic watch, a robust "10 ATM" wristwatch composed totally of plastic from the ocean. 15% of sales go toward protecting the ocean. Eco-friendly and fashionable, they're ideal for both sports and daily wear.</p>
+                        <div class="product-price">$30.00</div>
+                        <button class="add-to-cart" data-product="Product 5" data-price="30.00">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product" id="product6">
+                    <img src="thermalbottle1.png" alt="Product 6">
+                    <div class="product-details">
+                        <h2>Thermal Water Bottle</h2>
+                        <p>This innovative SDGs thermal water bottle is made of sturdy materials that will last. Your soups and drinks will keep hot or cold for up to a whole day because of the insulated cap and vacuum insulation in the bottle! </p>
+                        <div class="product-price">$35.00</div>
+                        <button class="add-to-cart" data-product="Product 6" data-price="35.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="side-bar">
+                <div class="sort-filter">
+                    <label>Sort by Price:</label>
+                    <input type="radio" class="radio-buttons" id="sort-low-high" name="sort" value="low-high" checked>
+                    <label for="sort-low-high">Price Low to High</label>
+                    <input type="radio" class="radio-buttons" id="sort-high-low" name="sort" value="high-low">
+                    <label for="sort-high-low">Price High to Low</label>
+                </div>
+                
+                <!-- Shopping Cart Section -->
+                <div class="cart-section">
+                    <h2>Shopping Cart</h2>
+                    <div class="cart">
+                        <div class="cart-items"></div>
+                        <div class="total-price"></div>
+                    </div>
+                    <div class="checkout">
+                        <button class="checkout-btn">Checkout</button>
+                        <div class="checkout-summary"></div>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+                <li><a href="../Home/Home.html">Home</a> </li>
+                <li><a href="..//Shop/Shop.html">Shop</a> </li>
+                <li><a href="..//Gallery/gallery.html">Gallery</a> </li>
+                <li><a href="../UserProfile/profile.html">User Profile</a> </li>
+                <li><a href="../Team/team.html">About Us</a> </li>
+                <li><a href="../PageEditors/Student1.html" target="_blank">Editor's Page</a> </li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul> 
+                <li>57, Ramakrishna Road,<br>
+                    Colombo 06, SriLanka,</li>
+                <li>+94 766 760 760</li>
+                <li><span><a href="mailto: info@iit.ac.lk">info@iit.ac.lk</a></span></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Give Us A Feedback</h4>
+            <button id ="feedback-btn" onclick="window.location.href = '../feedback/feedback.html'">Send Feedback</button>
+        </div>
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="https://web.facebook.com/iitsl/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/iitsrilanka?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/iitlife/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a href="https://lk.linkedin.com/company/informatics-institute-of-technology"><i class="fab fa-linkedin-in"></i></a> 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
